@@ -30,7 +30,7 @@ module.exports = {
         dest: $p.build.index
     },
     /* ------------------------------
-        BrowserSync
+        Jade
     ------------------------------ */
     jade: {
         src: [
