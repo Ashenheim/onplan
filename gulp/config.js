@@ -36,7 +36,8 @@ module.exports = {
         src: [
             $p.source.jade + '*.jade',
             $p.source.jade + '**/*.jade',
-            '!' + $p.source.jade + 'layouts/**/*'
+            '!' + $p.source.jade + 'layouts/**/*',
+            '!' + $p.source.jade + 'includes/**/*'
         ],
         dest: $p.build.index,
         watch: [
