@@ -1,10 +1,25 @@
 /* ====================================
     Default
 ==================================== */
-var gulp =  require('gulp');
+var gulp = require('gulp');
 
 /*
     Tasks & Functions
 ------------------------------------ */
 
-gulp.task('default', ['copy', 'jade', 'style', 'scripts', 'watch', 'browsersync']);
+gulp.task('build', [
+    'copy',
+    'jade',
+    'style',
+    'scripts'
+]);
+
+gulp.task('serve', [
+    'watch',
+    'browsersync'
+]);
+
+gulp.task('default', [
+    'build',
+    'serve'
+]);

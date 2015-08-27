@@ -11,5 +11,5 @@ var config      = require('../config.js').deploy;
 
 gulp.task('deploy', function () {
     return gulp.src( config.src )
-        .pipe(deploy())
+        .pipe(deploy( config.settings ))
 });
