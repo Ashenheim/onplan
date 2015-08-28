@@ -3,9 +3,13 @@ html(lang='en')
     head
         meta(charset='UTF-8')
         title onplan
+        link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic,700italic")
         link(rel="stylesheet", href="assets/css/style.css")
     body
-        include ../includes/header
-        block content
+        .site-wrap
+            include ../includes/header
+            main#main
+                #primary.site-content
+                    block content
         
         script(src="assets/js/global.js")
